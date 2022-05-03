@@ -3,8 +3,9 @@
 # 开发时间 : 2022/4/28 1:15
 # 文件名称 : VariableDataTypePython
 # 开发工具 : PyCharm
-
+import keyword
 # Python 保留字：Python语言中已经被赋予特殊含义的单词。
+print(keyword.kwlist)
 
 # Python 标识符
 """
@@ -23,6 +24,20 @@ name = "zhouzhiwengang"
 print(type(name))
 name = 16
 print(type(name))
+# Python 内置函数id() 可以用于获取变量存储地址
+print(id(name))
 
-# Python 基本数据类型
 
+# Python 基本数据类型之字符串
+# 字符串定义
+title = '''珍惜当下,奋勇争先'''
+print(title)
+# 字符串转义之换行
+title = '''珍惜当下,\n奋勇争先'''
+print(title)
+# 字符串转义之空格
+title = '''珍惜当下,\0奋勇争先'''
+print(title)
+# 字符串转义之双引号
+title = '''\"珍惜当下,奋勇争先\"'''
+print(title)
